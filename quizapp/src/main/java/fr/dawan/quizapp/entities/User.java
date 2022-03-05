@@ -1,6 +1,5 @@
 package fr.dawan.quizapp.entities;
 
-import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -16,7 +15,6 @@ import javax.persistence.Version;
 
 public class User extends DbObject {
 
-    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,6 +1,5 @@
 package fr.dawan.quizapp.entities;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,18 +13,16 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
+//import org.hibernate.annotations.Fetch;
+//import org.hibernate.annotations.FetchMode;
 
-import fr.dawan.quizapp.entities.Question;
+//import fr.dawan.quizapp.entities.Question;
 
 
 @Entity
 @Table(name = "t_Quizz")
 
 public class Quizz extends DbObject {
-	private static final long serialVersionUID = -1L;
-
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -24,8 +24,8 @@ body h1 span, body h1 i {
   color: #ffa502;
 }
 body h3 {
-  color: #ffa502;
-  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
 }
 body .container .choices {
   display: flex;

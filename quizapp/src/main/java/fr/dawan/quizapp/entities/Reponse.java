@@ -1,6 +1,5 @@
 package fr.dawan.quizapp.entities;
 
-import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -20,8 +19,6 @@ import fr.dawan.quizapp.entities.Question;
 
 public class Reponse extends DbObject{
 	
-
-private static final long serialVersionUID = 1L;
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
