@@ -5,24 +5,21 @@
     layout:decorator="index"> <!-- Cette page est décoreée avec un layout qui s'appelle index.html-->
 <head>
 	<meta charset="UTF8">
-	<title>CCatégories</title>
+	<title>Catégories</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 	<body>
 		<div layout:fragment="content">
-			<table class="table panel panel-primary">
-				<thead class="panel-heading">
-       				<tr>
-            		<th>Categories</th>
-        			</tr>
-				</thead>
-					<tbody>
-        				<tr th:each="c:${listCategories}">
-            			<td th:text="${c.nomCategorie}"></td>
-
-        		</tr>
-    		</table>
+    		<section class="tiles">
+					<article class="style1" th:each="c:${listCategories}">
+						<span class="image"><img src="../images/pic01.jpg" alt="" /></span>
+						<a href="generic.html" th:text="${c.nomCategorie}"> 
+						<h3><strong></strong></h3>
+						<div class="content" ></div>
+						</a>
+					</article>									
+			</section>
 		</div>
 	</body>
 </html>

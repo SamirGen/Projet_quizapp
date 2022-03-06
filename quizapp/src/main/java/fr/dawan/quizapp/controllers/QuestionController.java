@@ -8,8 +8,9 @@ import org.springframework.ui.ModelMap;
 
 import fr.dawan.quizapp.entities.Question;
 import fr.dawan.quizapp.services.QuestionService;
+
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
@@ -19,7 +20,7 @@ public class QuestionController {
 	@Autowired
 	private QuestionService questionService;
 	
-	@RequestMapping( value="/index", method = RequestMethod.GET )
+	@GetMapping( value="/index")
 	 public String index(ModelMap modelMap) {
 		List<Question> listQuestion = questionService.findAll();
 		modelMap.addAttribute("questions", listQuestion);
