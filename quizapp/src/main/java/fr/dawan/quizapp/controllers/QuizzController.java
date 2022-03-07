@@ -22,7 +22,20 @@ public class QuizzController {
 	public String index(Model model) {
 		List<Quizz> quizz = quizzRepository.findAll();
 		model.addAttribute("listQuizz", quizz);
-		return "quizz"; 
+		return "quizzInformatique"; 
+		}
+	@GetMapping("/science")
+	public String Science(Model model) {
+		List<Quizz> quizz = quizzRepository.findAll();
+		model.addAttribute("listQuizz", quizz);
+		return "quizzScience"; 
+		}
+	
+	@GetMapping("/histoire")
+	public String Histoire(Model model) {
+		List<Quizz> quizz = quizzRepository.findAll();
+		model.addAttribute("listQuizz", quizz);
+		return "quizzHistoire"; 
 		}
 		
 		

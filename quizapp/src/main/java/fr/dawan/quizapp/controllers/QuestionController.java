@@ -24,7 +24,7 @@ public class QuestionController {
 	 public String index(ModelMap modelMap) {
 		List<Question> listQuestion = questionService.findAll();
 		modelMap.addAttribute("questions", listQuestion);
-		return "index";
+		return "questions";
 		
 	}
 

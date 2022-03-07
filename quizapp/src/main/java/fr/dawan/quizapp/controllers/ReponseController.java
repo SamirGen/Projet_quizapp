@@ -21,7 +21,7 @@ public class ReponseController {
 	public String index(Model model) {
 		List<Reponse> reponse = reponseRepository.findAll();
 		model.addAttribute("listReponse", reponse);
-		return "reponse"; 
+		return "questions"; 
 		}
 
 }

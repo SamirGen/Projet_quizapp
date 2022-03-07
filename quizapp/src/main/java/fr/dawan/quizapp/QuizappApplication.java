@@ -45,17 +45,17 @@ public class QuizappApplication implements CommandLineRunner{
 		categorieRepository.save(categorie2);
 		categorieRepository.save(categorie3);
 		
-		Quizz quizz1 = new Quizz("Symbole des elements", categorie1);
-		Quizz quizz2 = new Quizz("Epidemie Pandemies", categorie1);
-		Quizz quizz3 = new Quizz("unité de mesure", categorie1);
+		Quizz quizz1 = new Quizz("Faune et flore", categorie1);
+		Quizz quizz2 = new Quizz("Anatomie corps humain", categorie1);
+		Quizz quizz3 = new Quizz("Physique Chimie", categorie1);
 		
 		Quizz quizz4 = new Quizz("Java", categorie2);
 		Quizz quizz5 = new Quizz("PHP", categorie2);
 		Quizz quizz6 = new Quizz("Python", categorie2);
 		
-		Quizz quizz7 = new Quizz("GM", categorie3);
-		Quizz quizz8 = new Quizz("europe", categorie3);
-		Quizz quizz9 = new Quizz("france", categorie3);
+		Quizz quizz7 = new Quizz("Seconde GM", categorie3);
+		Quizz quizz8 = new Quizz("Histoire de France", categorie3);
+		Quizz quizz9 = new Quizz("La 1ere GM", categorie3);
 		
 		quizzRepository.save(quizz1);
 		quizzRepository.save(quizz2);
